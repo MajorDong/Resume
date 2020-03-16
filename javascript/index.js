@@ -26,7 +26,7 @@
       target = e.target.parentNode
     }
 
-    const idx = Array.prototype.indexOf.call(nav.children, target.parentNode)
+    const idx = Array.prototype.indexOf.call(nav.children, target && target.parentNode)
 
     if (idx + 1 > contentSize) {
       return
